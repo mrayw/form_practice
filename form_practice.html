@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+
+      }
+
+      fieldset {
+        width: 150px;
+        margin: 5%;
+        border-radius: 10px;
+      }
+      input {
+        display:block;
+        margin: 0 0 10% 0;
+      }
+
+      input:focus {
+        background: lightgrey;
+      }
+
+      input:last-child {
+        background: lightgrey;
+        border-radius: 5px;
+        margin: 10%;
+      }
+
+      input:last-child:focus {
+        background: lightgreen;
+
+      }
+
+    </style>
+  </head>
+  <body>
+    <form method="post" action="https://formspree.io/mrayw@umich.edu">
+      <fieldset>
+      <legend>Personal Information</legend>
+      <label for="name">Name</label>
+        <input type="text" name="naem" id="name" placeholder="First Blah Last Blah">
+      <label for="email">Email</label>
+        <input type="email" name="email" id="email" placeholder="blah@blah.com" required>
+      <label for="phone">Phone Number</label>
+        <input type="tel" name="phone-number" placeholder="+1(123)456-7890">
+      <label for="DOB">DOB</label>
+        <input type="date" name="DOB" id="DOB">
+      <label for="comments">Comments</label>
+        <input type="textarea" name="comments" id="comments" placeholder="Other You Things">
+      <input type="submit" value="SUMBIT TO MIKE">
+
+      </fieldset>
+    </form>
+
+  </body>
+</html>
